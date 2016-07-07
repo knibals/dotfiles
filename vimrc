@@ -14,6 +14,12 @@ call plug#begin(config_dir . '/bundles')
 Plug 'fatih/vim-go', {'for': 'go'}
 Plug 'nsf/gocode', {'for': 'go'}
 
+" PHP
+Plug 'StanAngeloff/php.vim', {'for': 'php'}
+Plug 'shawncplus/phpcomplete.vim', {'for': 'php'}
+Plug 'arnaud-lb/vim-php-namespace', { 'for': 'php' }
+Plug 'evidens/vim-twig',
+
 call plug#end()
 
 " Automatically source vimrc on save.
