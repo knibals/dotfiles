@@ -10,7 +10,7 @@ endif
 
 call plug#begin(config_dir . '/bundles')
 
-" Go
+" Go plugins
 Plug 'fatih/vim-go', {'for': 'go'}
 Plug 'nsf/gocode', {'for': 'go'}
 
@@ -49,3 +49,7 @@ autocmd BufReadPost *
      \ if line("'\"") > 0 && line("'\"") <= line("$") |
      \   exe "normal! g`\"" |
      \ endif
+
+" Go(lang) configuration
+let g:go_fmt_command = "goimports"
+let g:go_list_type   = "quickfix"
