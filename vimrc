@@ -18,3 +18,7 @@ set so=5
 set list listchars=tab:>.,trail:.,extends:#,nbsp:.
 set hidden
 set matchpairs+=<:>
+
+set t_Co=256
+let g:rehash256 = 1
+colorscheme desert
