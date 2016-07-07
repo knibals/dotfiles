@@ -5,3 +5,9 @@ autocmd! bufwritepost $MYVIMRC source $MYVIMRC
 
 let mapleader = ","
 noremap \ ,
+
+syntax on
+filetype plugin indent on
+set encoding=utf8
+set ffs=unix,dos,mac
+
