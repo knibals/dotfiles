@@ -11,3 +11,6 @@ filetype plugin indent on
 set encoding=utf8
 set ffs=unix,dos,mac
 
+set number
+set relativenumber
+set so=5
