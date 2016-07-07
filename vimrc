@@ -1,5 +1,21 @@
 set nocompatible
 
+let config_dir = '~/.vim' " My ViM config directory
+
+if empty(glob(config_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo ' . config_dir . '/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall
+endif
+
+
+call plug#begin(config_dir . '/bundles')
+
+" Go
+Plug 'fatih/vim-go', {'for': 'go'}
+Plug 'nsf/gocode', {'for': 'go'}
+
+call plug#end()
+
 " Automatically source vimrc on save.
 autocmd! bufwritepost $MYVIMRC source $MYVIMRC
 
@@ -22,3 +38,8 @@ set matchpairs+=<:>
 set t_Co=256
 let g:rehash256 = 1
 colorscheme desert
+
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
