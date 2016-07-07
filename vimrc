@@ -14,3 +14,7 @@ set ffs=unix,dos,mac
 set number
 set relativenumber
 set so=5
+
+set list listchars=tab:>.,trail:.,extends:#,nbsp:.
+set hidden
+set matchpairs+=<:>
