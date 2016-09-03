@@ -24,6 +24,7 @@ Plug 'cakebaker/scss-syntax.vim', { 'for': 'scss' }
 " Go plugins
 Plug 'fatih/vim-go', {'for': 'go'}
 Plug 'nsf/gocode', {'for': 'go'}
+Plug 'garyburd/go-explorer', {'for': 'go'}
 
 "
 " PHP
@@ -88,5 +89,12 @@ augroup configgroup
 augroup END
 
 " Go(lang) configuration
+augroup go
+  autocmd!
+
+  " Show by default 4 spaces for a tab
+  autocmd BufNewFile,BufRead *.go setlocal noexpandtab tabstop=4 shiftwidth=4
+augroup END
+
 let g:go_fmt_command = "goimports"
 let g:go_list_type   = "quickfix"
