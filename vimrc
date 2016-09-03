@@ -60,7 +60,7 @@ set matchpairs+=<:>
 
 set t_Co=256
 let g:rehash256 = 1
-colorscheme desert
+colorscheme koehler
 
 map <up> <nop>
 map <down> <nop>
