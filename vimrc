@@ -61,6 +61,21 @@ autocmd BufReadPost *
      \   exe "normal! g`\"" |
      \ endif
 
+augroup configgroup
+    autocmd!
+    autocmd VimEnter * highlight clear SignColumn
+    autocmd FileType php setlocal expandtab
+    autocmd FileType php setlocal list
+    autocmd FileType php setlocal listchars=tab:+\ ,eol:-
+    autocmd FileType php setlocal formatprg=par\ -w80\ -T4
+    autocmd FileType python setlocal commentstring=#\ %s
+    autocmd BufEnter Makefile setlocal noexpandtab
+    autocmd BufEnter *.sh setlocal tabstop=2
+    autocmd BufEnter *.sh setlocal shiftwidth=2
+    autocmd BufEnter *.sh setlocal softtabstop=2
+    au BufNewFile,BufRead *.yaml,*.yml    setf yaml
+augroup END
+
 " Go(lang) configuration
 let g:go_fmt_command = "goimports"
 let g:go_list_type   = "quickfix"
