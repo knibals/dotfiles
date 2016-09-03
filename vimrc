@@ -10,20 +10,31 @@ endif
 
 call plug#begin(config_dir . '/bundles')
 
+"
+" General
+Plug 'jiangmiao/auto-pairs'
+
+"
 " HTML
 Plug 'othree/html5.vim', { 'for': 'html' }
 Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
 Plug 'cakebaker/scss-syntax.vim', { 'for': 'scss' }
 
+"
 " Go plugins
 Plug 'fatih/vim-go', {'for': 'go'}
 Plug 'nsf/gocode', {'for': 'go'}
 
+"
 " PHP
 Plug 'StanAngeloff/php.vim', {'for': 'php'}
 Plug 'shawncplus/phpcomplete.vim', {'for': 'php'}
 Plug 'arnaud-lb/vim-php-namespace', { 'for': 'php' }
-Plug 'evidens/vim-twig',
+Plug 'evidens/vim-twig', {'for': 'twig' }
+
+"
+" Git
+Plug 'airblade/vim-gitgutter', {}
 
 call plug#end()
 
