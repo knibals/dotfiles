@@ -11,6 +11,10 @@ endif
 call plug#begin(config_dir . '/bundles')
 
 "
+" ViM Colors (theme)
+Plug 'NLKNguyen/papercolor-theme'
+
+"
 " General
 Plug 'jiangmiao/auto-pairs'
 
@@ -60,7 +64,8 @@ set matchpairs+=<:>
 
 set t_Co=256
 let g:rehash256 = 1
-colorscheme koehler
+set background=dark
+colorscheme PaperColor
 
 map <up> <nop>
 map <down> <nop>
