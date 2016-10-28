@@ -60,6 +60,7 @@ call plug#end()
 autocmd! bufwritepost $MYVIMRC source $MYVIMRC
 
 let mapleader = ","
+let g:mapleader = ","
 noremap \ ,
 
 syntax on
@@ -85,6 +86,8 @@ map <down> <nop>
 map <left> <nop>
 map <right> <nop>
 
+let g:user_emmet_install_global = 0
+
 " Return to last edit position when opening files (indispensable!)
 autocmd BufReadPost *
      \ if line("'\"") > 0 && line("'\"") <= line("$") |
@@ -99,11 +102,17 @@ augroup configgroup
     autocmd FileType php setlocal listchars=tab:+\ ,eol:-
     autocmd FileType php setlocal formatprg=par\ -w80\ -T4
     autocmd FileType python setlocal commentstring=#\ %s
+    autocmd FileType html,css EmmetInstall
     autocmd BufEnter Makefile setlocal noexpandtab
     autocmd BufEnter *.sh setlocal tabstop=2
     autocmd BufEnter *.sh setlocal shiftwidth=2
     autocmd BufEnter *.sh setlocal softtabstop=2
-    au BufNewFile,BufRead *.yaml,*.yml    setf yaml
+    autocmd BufEnter,BufNewFile,BufRead	*.html,*.tpl setlocal tabstop=2 shiftwidth=2 softtabstop=2
+    autocmd BufNewFile,BufRead *.yaml,*.yml setf yaml
+    autocmd BufNewFile,BufRead *.tpl setf html
+    autocmd BufNewFile,BufRead *.install setlocal ft=php
+    autocmd BufNewFile,BufRead *.module setlocal ft=php
+    autocmd BufNewFile,BufRead *.inc setlocal ft=php
 augroup END
 
 " Go(lang) configuration
