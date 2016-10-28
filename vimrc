@@ -13,6 +13,8 @@ call plug#begin(config_dir . '/bundles')
 "
 " ViM Colors (theme)
 Plug 'NLKNguyen/papercolor-theme'
+Plug 'trusktr/seti.vim'
+Plug 'vim-scripts/Mustang2'
 
 "
 " General
