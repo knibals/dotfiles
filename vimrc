@@ -1,5 +1,3 @@
-set nocompatible
-
 let config_dir = '~/.vim' " My ViM config directory
 
 if empty(glob(config_dir . '/autoload/plug.vim'))
