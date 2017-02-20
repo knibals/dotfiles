@@ -17,9 +17,6 @@ Plug 'vim-scripts/Mustang2'
 "
 " General
 Plug 'jiangmiao/auto-pairs'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-
 Plug 'ctrlpvim/ctrlp.vim'
 
 "
