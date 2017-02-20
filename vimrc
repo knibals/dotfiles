@@ -77,7 +77,7 @@ set matchpairs+=<:>
 set t_Co=256
 let g:rehash256 = 1
 set background=dark
-colorscheme PaperColor
+colorscheme Mustang
 
 map <up> <nop>
 map <down> <nop>
