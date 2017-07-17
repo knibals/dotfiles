@@ -48,6 +48,12 @@ Plug 'arnaud-lb/vim-php-namespace', { 'for': 'php' }
 Plug 'evidens/vim-twig', {'for': 'twig' }
 
 "
+" Javascript
+Plug 'pangloss/vim-javascript', {'for': 'js'}
+Plug 'mxw/vim-jsx', {'for': 'js'}
+Plug 'jbgutierrez/vim-babel', {'for': 'js'}
+
+"
 " Git
 Plug 'airblade/vim-gitgutter', {}
 
@@ -110,6 +116,7 @@ augroup configgroup
     autocmd BufNewFile,BufRead *.install setlocal ft=php
     autocmd BufNewFile,BufRead *.module setlocal ft=php
     autocmd BufNewFile,BufRead *.inc setlocal ft=php
+    autocmd BufNewFile,BufRead *.babelrc setlocal ft=json
 augroup END
 
 " Go(lang) configuration
