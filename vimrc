@@ -72,7 +72,7 @@ set ffs=unix,dos,mac
 
 set number
 set relativenumber
-set so=5
+set so=15
 
 set list listchars=tab:>.,trail:.,extends:#,nbsp:.
 set hidden
@@ -97,25 +97,24 @@ autocmd BufReadPost *
      \ endif
 
 augroup configgroup
-    autocmd!
-    autocmd VimEnter * highlight clear SignColumn
-    autocmd FileType php setlocal expandtab
-    autocmd FileType php setlocal list
-    autocmd FileType php setlocal listchars=tab:+\ ,eol:-
-    autocmd FileType php setlocal formatprg=par\ -w80\ -T4
-    autocmd FileType python setlocal commentstring=#\ %s
-    autocmd FileType html,css EmmetInstall
-    autocmd BufEnter Makefile setlocal noexpandtab
-    autocmd BufEnter *.sh setlocal tabstop=2
-    autocmd BufEnter *.sh setlocal shiftwidth=2
-    autocmd BufEnter *.sh setlocal softtabstop=2
-    autocmd BufEnter,BufNewFile,BufRead	*.html,*.tpl setlocal tabstop=2 shiftwidth=2 softtabstop=2
-    autocmd BufNewFile,BufRead *.yaml,*.yml setf yaml
-    autocmd BufNewFile,BufRead *.tpl setf html
-    autocmd BufNewFile,BufRead *.install setlocal ft=php
-    autocmd BufNewFile,BufRead *.module setlocal ft=php
-    autocmd BufNewFile,BufRead *.inc setlocal ft=php
-    autocmd BufNewFile,BufRead *.babelrc setlocal ft=json
+	autocmd!
+	autocmd VimEnter * highlight clear SignColumn
+	autocmd FileType php setlocal expandtab
+	autocmd FileType php setlocal list
+	autocmd FileType php setlocal listchars=tab:+\ ,eol:-
+	autocmd FileType php setlocal formatprg=par\ -w80\ -T4
+	autocmd FileType html,css EmmetInstall
+	autocmd BufEnter Makefile setlocal noexpandtab
+	autocmd BufEnter *.sh setlocal tabstop=2
+	autocmd BufEnter *.sh setlocal shiftwidth=2
+	autocmd BufEnter *.sh setlocal softtabstop=2
+	autocmd BufEnter,BufNewFile,BufRead *.html,*.tpl setlocal tabstop=2 shiftwidth=2 softtabstop=2
+	autocmd BufNewFile,BufRead *.yaml,*.yml setf yaml
+	autocmd BufNewFile,BufRead *.tpl setf html
+	autocmd BufNewFile,BufRead *.install setlocal ft=php
+	autocmd BufNewFile,BufRead *.module setlocal ft=php
+	autocmd BufNewFile,BufRead *.inc setlocal ft=php
+	autocmd BufNewFile,BufRead *.babelrc setlocal ft=json
 augroup END
 
 " Go(lang) configuration
