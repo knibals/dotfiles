@@ -128,3 +128,10 @@ augroup END
 
 let g:go_fmt_command = "goimports"
 let g:go_list_type   = "quickfix"
+
+
+let php_var_selector_is_identifier=1 " force php dollar sign to the same colour as it's variable name
+augroup phpSyntaxOverride
+	autocmd!
+	autocmd FileType php call PhpSyntaxOverride()
+augroup END
