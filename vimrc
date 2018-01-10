@@ -19,7 +19,6 @@ Plug 'sickill/vim-monokai'
 " General
 Plug 'jiangmiao/auto-pairs'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'SirVer/ultisnips'
 
 "
 " HTML
