@@ -130,6 +130,12 @@ let g:go_list_type   = "quickfix"
 
 
 let php_var_selector_is_identifier=1 " force php dollar sign to the same colour as it's variable name
+
+function! PhpSyntaxOverride()
+	hi! def link phpDocTags  phpDefine
+	hi! def link phpDocParam phpType
+endfunction
+
 augroup phpSyntaxOverride
 	autocmd!
 	autocmd FileType php call PhpSyntaxOverride()
