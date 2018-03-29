@@ -14,11 +14,13 @@ Plug 'NLKNguyen/papercolor-theme'
 Plug 'trusktr/seti.vim'
 Plug 'dracula/vim'
 Plug 'sickill/vim-monokai'
+Plug 'croaker/mustang-vim'
 
 "
 " General
 Plug 'jiangmiao/auto-pairs'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'itchyny/lightline.vim'
 
 "
 " HTML
