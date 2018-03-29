@@ -119,6 +119,18 @@ augroup configgroup
 	autocmd BufNewFile,BufRead *.babelrc setlocal ft=json
 augroup END
 
+" JS configuration
+"
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files
+let g:user_emmet_leader_key='<Tab>'
+let g:user_emmet_settings = {
+\  'javascript.jsx' : {
+\      'extends' : 'jsx',
+\ },
+\}
+
+
+"
 " Go(lang) configuration
 augroup go
   autocmd!
