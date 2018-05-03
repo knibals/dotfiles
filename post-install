@@ -12,13 +12,13 @@ fi
 echo 'Démarrage de la mise à jour globale'
 echo '.........'
 apt-get update && apt-get dist-upgrade -y
-apt-get install -y build-essential autotools-dev git-core meld tmux ncurses-dev samba tlp tree python3-smbc exuberant-ctags software-properties-common python-software-properties 
+apt-get install -y build-essential htop sysv-rc-conf caffeine puddletag autotools-dev git-core meld tmux ncurses-dev samba tlp tree software-properties-common
 
 
 echo ''
-echo 'Installation des décomprésseurs'
+echo 'Installation des décompresseurs'
 echo ''
-apt-get install -y p7zip-full unrar-free caffeine puddletag
+apt-get install -y p7zip-full unrar-free
 
 command -v yarn >/dev/null 2>&1 || {
 	echo ''
@@ -37,7 +37,6 @@ echo ''
 command -v nautilus-dropbox >/dev/null 2>&1 || {
 	apt-get install -y nautilus-dropbox
 }
-apt-get install -y htop sysv-rc-conf
 
 command -v heroku >/dev/null 2>&1 || {
 	wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
