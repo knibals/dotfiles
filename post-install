@@ -1,0 +1,59 @@
+#!/bin/bash
+#
+
+clear
+cdtmp()
+
+if [ $EUID -ne 0 ]; then
+  echo "Ce script doit être lancé en tant que root. Tapez: sudo $0" 1>&2
+  exit 1
+fi
+
+echo 'Démarrage de la mise à jour globale'
+echo '.........'
+apt-get update && apt-get dist-upgrade -y
+apt-get install -y build-essential autotools-dev git-core meld tmux ncurses-dev samba tlp tree python3-smbc exuberant-ctags software-properties-common python-software-properties 
+
+
+echo ''
+echo 'Installation des décomprésseurs'
+echo ''
+apt-get install -y p7zip-full unrar-free caffeine puddletag
+
+command -v yarn >/dev/null 2>&1 || {
+	echo ''
+	echo '~~~ Install YARN (https://yarnpkg.com/docs/install) ~~~'
+	echo ''
+	curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+	curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+	echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+	apt-get update && apt-get install -y nodejs yarn
+}
+
+
+echo ''
+echo '### Install utilitaires ###'
+echo ''
+command -v nautilus-dropbox >/dev/null 2>&1 || {
+	apt-get install -y nautilus-dropbox
+}
+apt-get install -y htop sysv-rc-conf
+
+command -v heroku >/dev/null 2>&1 || {
+	wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+}
+
+command -v vlc >/dev/null 2>&1 || {
+	echo ''
+	echo '### Install des modules multimedia ###'
+	echo ''
+	apt-get install -y vlc gstreamer1.0-plugins-ugly gstreamer1.0-fluendo-mp3 gstreamer1.0-libav gstreamer1.0-plugins-bad-videoparsers libav-tools ubuntu-restricted-extras libavcodec-extra libavformat-ffmpeg56
+}
+
+command -v zeegaree >/dev/null 2>&1 || {
+	apt-get install -y python3-pyside libqt4-sql-sqlite libqt4-sql-sqlite python-pyside gir1.2-unity-5.0 gir1.2-notify-0.7
+}
+
+cdtmp() {
+  cd /tmp
+}
