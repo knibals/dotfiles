@@ -145,6 +145,10 @@ augroup END
 let g:go_fmt_command = "goimports"
 let g:go_list_type   = "quickfix"
 
+set updatetime=300
+let g:go_auto_type_info = 1 " automatically display function signature in status line
+let g:go_auto_sameids = 1 " automatically highlight all matching identifiers (vars, funcs, etc.)
+
 
 let php_var_selector_is_identifier=1 " force php dollar sign to the same colour as it's variable name
 
