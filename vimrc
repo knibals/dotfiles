@@ -35,8 +35,7 @@ Plug 'cakebaker/scss-syntax.vim', { 'for': 'scss' }
 
 "
 " Go plugins
-Plug 'fatih/vim-go', {'for': 'go', 'do': ':GoInstallBinaries'}
-Plug 'nsf/gocode', {'for': 'go'}
+Plug 'mdempsky/gocode', {'for': 'go'}
 Plug 'garyburd/go-explorer', {'for': 'go'}
 Plug 'dgryski/vim-godef', {'for': 'go'}
 
