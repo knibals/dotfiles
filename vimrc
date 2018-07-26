@@ -72,7 +72,8 @@ noremap \ ,
 "set encoding=utf8
 "set ffs=unix,dos,mac
 
-"set number
+set autowrite
+
 set relativenumber
 set so=15
 
@@ -83,7 +84,7 @@ set matchpairs+=<:>
 set t_Co=256
 let g:rehash256 = 1
 set background=dark
-colorscheme PaperColor
+colorscheme mustang
 
 set cm=blowfish2 "encrypt a file using the :X command (vim +X sensitive_file.md)
 
