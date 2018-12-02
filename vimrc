@@ -48,12 +48,6 @@ Plug 'arnaud-lb/vim-php-namespace', { 'for': 'php' }
 Plug 'evidens/vim-twig', {'for': 'twig' }
 
 "
-" Javascript
-Plug 'pangloss/vim-javascript', {'for': 'js'}
-Plug 'mxw/vim-jsx', {'for': 'js'}
-Plug 'jbgutierrez/vim-babel', {'for': 'js'}
-
-"
 " Git
 Plug 'airblade/vim-gitgutter', {}
 
