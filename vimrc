@@ -28,9 +28,9 @@ Plug 'mattn/emmet-vim', { 'for': ['html', 'tpl'] }
 
 "
 " Go plugins
-Plug 'fatih/vim-go', {'for': 'go', 'do': ':GoInstallBinaries'}
-Plug 'nsf/gocode', {'for': 'go'}
+Plug 'mdempsky/gocode', {'for': 'go'}
 Plug 'dgryski/vim-godef', {'for': 'go'}
+Plug 'fatih/vim-go', {'for': 'go', 'do': ':GoInstallBinaries'}
 
 "
 " PHP
@@ -58,7 +58,8 @@ noremap \ ,
 "set encoding=utf8
 "set ffs=unix,dos,mac
 
-"set number
+set autowrite
+
 set relativenumber
 set so=15
 
@@ -69,7 +70,7 @@ set matchpairs+=<:>
 set t_Co=256
 let g:rehash256 = 1
 set background=dark
-colorscheme PaperColor
+colorscheme mustang
 
 set cm=blowfish2 "encrypt a file using the :X command (vim +X sensitive_file.md)
 
@@ -129,6 +130,10 @@ augroup END
 
 let g:go_fmt_command = "goimports"
 let g:go_list_type   = "quickfix"
+
+set updatetime=300
+let g:go_auto_type_info = 1 " automatically display function signature in status line
+let g:go_auto_sameids = 1 " automatically highlight all matching identifiers (vars, funcs, etc.)
 
 
 let php_var_selector_is_identifier=1 " force php dollar sign to the same colour as it's variable name
