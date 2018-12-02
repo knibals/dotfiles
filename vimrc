@@ -24,8 +24,6 @@ Plug 'itchyny/lightline.vim'
 
 "
 " HTML
-Plug 'othree/html5.vim', { 'for': 'html' }
-Plug 'othree/html5-syntax.vim', { 'for': 'html' }
 Plug 'mattn/emmet-vim', { 'for': ['html', 'tpl'] }
 
 Plug 'skammer/vim-css-color', { 'for': 'css' }
