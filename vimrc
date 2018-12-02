@@ -28,9 +28,9 @@ Plug 'mattn/emmet-vim', { 'for': ['html', 'tpl'] }
 
 "
 " Go plugins
+Plug 'fatih/vim-go', {'for': 'go', 'do': ':GoInstallBinaries'}
 Plug 'mdempsky/gocode', {'for': 'go'}
 Plug 'dgryski/vim-godef', {'for': 'go'}
-Plug 'fatih/vim-go', {'for': 'go', 'do': ':GoInstallBinaries'}
 
 "
 " PHP
