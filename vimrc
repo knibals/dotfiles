@@ -26,11 +26,6 @@ Plug 'itchyny/lightline.vim'
 " HTML
 Plug 'mattn/emmet-vim', { 'for': ['html', 'tpl'] }
 
-Plug 'skammer/vim-css-color', { 'for': 'css' }
-Plug 'hail2u/vim-css3-syntax', { 'for': 'css' }
-Plug 'd0f/vim-css3', { 'for': 'css' }
-Plug 'cakebaker/scss-syntax.vim', { 'for': 'scss' }
-
 "
 " Go plugins
 Plug 'fatih/vim-go', {'for': 'go', 'do': ':GoInstallBinaries'}
