@@ -41,6 +41,7 @@ Plug 'evidens/vim-twig', {'for': 'twig' }
 
 "
 " Git
+Plug 'tpope/vim-fugitive', {}
 Plug 'airblade/vim-gitgutter', {}
 
 call plug#end()
