@@ -18,6 +18,7 @@ Plug 'croaker/mustang-vim'
 
 "
 " General
+Plug 'danth/pathfinder.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'itchyny/lightline.vim'
