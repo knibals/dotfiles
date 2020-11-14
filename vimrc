@@ -30,7 +30,7 @@ Plug 'mattn/emmet-vim', { 'for': ['html', 'tpl'] }
 "
 " Go plugins
 Plug 'fatih/vim-go', {'for': 'go', 'do': ':GoInstallBinaries'}
-Plug 'stamblerre/gocode', {'for': 'go'}
+"Plug 'stamblerre/gocode', {'for': 'go'}
 
 "
 " PHP
@@ -131,6 +131,9 @@ augroup END
 
 let g:go_fmt_command = "goimports"
 let g:go_list_type   = "quickfix"
+
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'
 
 set updatetime=300
 let g:go_auto_type_info = 1 " automatically display function signature in status line
