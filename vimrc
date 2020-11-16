@@ -12,7 +12,6 @@ call plug#begin(config_dir . '/bundles')
 " ViM Colors (theme)
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'trusktr/seti.vim'
-Plug 'dracula/vim'
 Plug 'sickill/vim-monokai'
 Plug 'croaker/mustang-vim'
 
@@ -21,7 +20,6 @@ Plug 'croaker/mustang-vim'
 Plug 'danth/pathfinder.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'itchyny/lightline.vim'
 
 "
 " HTML
@@ -30,15 +28,12 @@ Plug 'mattn/emmet-vim', { 'for': ['html', 'tpl'] }
 "
 " Go plugins
 Plug 'fatih/vim-go', {'for': 'go', 'do': ':GoInstallBinaries'}
-"Plug 'stamblerre/gocode', {'for': 'go'}
 
 "
 " PHP
 Plug 'StanAngeloff/php.vim', {'for': 'php'}
 Plug 'shawncplus/phpcomplete.vim', {'for': 'php'}
 Plug 'arnaud-lb/vim-php-namespace', { 'for': 'php' }
-
-Plug 'evidens/vim-twig', {'for': 'twig' }
 
 "
 " Git
