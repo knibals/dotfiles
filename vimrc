@@ -23,7 +23,8 @@ Plug 'ctrlpvim/ctrlp.vim'
 
 "
 " HTML
-Plug 'mattn/emmet-vim', { 'for': ['html', 'tpl'] }
+Plug 'mattn/emmet-vim', { 'for': ['html', 'twig', 'tpl'] }
+Plug 'evidens/vim-twig', {'for': 'twig' }
 
 "
 " Go plugins
