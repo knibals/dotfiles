@@ -57,7 +57,10 @@ noremap \ ,
 set autowrite
 
 set relativenumber
-set so=15
+set so=10
+set cursorline
+
+set splitbelow splitright
 
 set list listchars=tab:>.,trail:.,extends:#,nbsp:.
 set hidden
