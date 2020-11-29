@@ -57,7 +57,7 @@ noremap \ ,
 
 set autowrite
 
-set relativenumber
+set number relativenumber
 set so=10
 set cursorline
 
