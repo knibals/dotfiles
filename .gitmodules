@@ -1,0 +1,3 @@
+[submodule "vim-packages/pack/plugins/start/ayu"]
+	path = vim-packages/pack/plugins/start/ayu
+	url = https://github.com/Luxed/ayu-vim.git

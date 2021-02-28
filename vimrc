@@ -25,7 +25,7 @@ set matchpairs+=<:>
 set t_Co=256
 let g:rehash256 = 1
 set background=dark
-colorscheme mustang
+colorscheme ayu
 
 set cm=blowfish2 "encrypt a file using the :X command (vim +X sensitive_file.md)
 
