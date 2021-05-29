@@ -28,3 +28,5 @@
 	helper = cache
 [url "https://"]
 	insteadOf = git://
+[pull]
+	rebase = true
