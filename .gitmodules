@@ -1,15 +1,9 @@
-[submodule "vim-packages/pack/plugins/start/ayu"]
-	path = vim-packages/pack/plugins/start/ayu
-	url = https://github.com/Luxed/ayu-vim.git
-[submodule "vim-packages/pack/plugins/opt/vim-go"]
-	path = vim-packages/pack/plugins/opt/vim-go
-	url = https://github.com/fatih/vim-go.git
-[submodule "vim/pack/plugins/start/vim-go"]
-	path = vim/pack/plugins/start/vim-go
-	url = https://github.com/fatih/vim-go.git
 [submodule "vim/pack/vendor/start/vim-go"]
 	path = vim/pack/vendor/start/vim-go
 	url = https://github.com/fatih/vim-go.git
 [submodule "vim/pack/vendor/start/ale"]
 	path = vim/pack/vendor/start/ale
 	url = https://github.com/dense-analysis/ale.git
+[submodule "vim/pack/vendor/start/ayu"]
+	path = vim/pack/vendor/start/ayu
+	url = https://github.com/Luxed/ayu-vim.git
