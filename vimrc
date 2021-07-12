@@ -86,8 +86,14 @@ augroup END
 let g:go_fmt_command = "goimports"
 let g:go_list_type   = "quickfix"
 
+" use Gopls
+" with vim-go
 let g:go_def_mode='gopls'
 let g:go_info_mode='gopls'
+"with Ale
+let g:ale_linters = {
+  \ 'go': ['gopls'],
+  \}
 
 set updatetime=300
 let g:go_auto_type_info = 1 " automatically display function signature in status line
