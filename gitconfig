@@ -30,3 +30,5 @@
 	insteadOf = git://
 [pull]
 	rebase = true
+[merge]
+	tool = meld
